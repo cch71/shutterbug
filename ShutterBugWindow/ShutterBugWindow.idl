@@ -1,0 +1,54 @@
+// ShutterBugWindow.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (ShutterBugWindow.tlb) that will become a resource in
+// ShutterBugWindow.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(6D317765-E37D-498B-8465-1E73F554CE8E), version(1.0),
+  helpfile("ShutterBugWindow.hlp"),
+  helpstring("ShutterBugWindow ActiveX Control module"),
+  control ]
+library ShutterBugWindowLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CShutterBugWindowCtrl
+
+	[ uuid(869F5284-303C-4BCA-B1AC-EED283FB9AE8),
+	  helpstring("Dispatch interface for ShutterBugWindow Control")]
+	dispinterface _DShutterBugWindow
+	{
+		properties:
+		[id(1), helpstring("property ImageURL")] BSTR ImageURL;
+		[id(2), helpstring("property RefreshDelay")] LONG RefreshDelay;
+methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CShutterBugWindowCtrl
+
+	[ uuid(8AB21B2A-B199-4138-89E5-3D8557C3B76E),
+	  helpstring("Event interface for ShutterBugWindow Control") ]
+	dispinterface _DShutterBugWindowEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CShutterBugWindowCtrl
+
+	[ uuid(0E296B30-0145-498B-9F5F-320797A01017),
+	  helpstring("ShutterBugWindow Control"), control ]
+	coclass ShutterBugWindow
+	{
+		[default] dispinterface _DShutterBugWindow;
+		[default, source] dispinterface _DShutterBugWindowEvents;
+	};
+
+};

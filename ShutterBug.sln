@@ -1,0 +1,85 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShutterBugLib", "ShutterBugLib\ShutterBugLib.vcproj", "{AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShutterBugDLL", "ShutterBugDLL\ShutterBug.vcproj", "{6CC8C0D3-5369-4863-818F-96896039AF3B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4} = {AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShutterBugNetTest", "ShutterBugNetTest\ShutterBugNetTest.csproj", "{862AC120-2198-4554-BA6D-D2B7FBAEB3D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6CC8C0D3-5369-4863-818F-96896039AF3B} = {6CC8C0D3-5369-4863-818F-96896039AF3B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShutterBugService", "ShutterBugService\ShutterBugService.csproj", "{55E4443E-FF68-4148-9B7B-2948A45D6C31}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraigsCreations.com.WebCamera", "CraigsCreations.com.WebCamera\CraigsCreations.com.WebCamera.csproj", "{B563A51D-AAF5-478B-8BFF-BBBD7418BFED}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ShutterBugInstaller", "ShutterBugInstaller\ShutterBugInstaller.vdproj", "{A95AAD1E-9C99-472C-AF92-623262AD120A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShutterBugWindow", "ShutterBugWindow\ShutterBugWindow.vcproj", "{0DE8A3BA-7578-4EDC-A1B5-6B8E93F352AC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ShutterBugWindowsCab", "ShutterBugWindowsCab\ShutterBugWindowsCab.vdproj", "{5C9FFA0E-FCC7-4EBE-834A-DF21BC34B2C7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ShutterBugRedistSupport", "ShutterBugClientInstall\ShutterBugClientInstall.vdproj", "{6BB70A4A-6C04-440D-ABA2-91A33CCD4F59}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4}.Debug.ActiveCfg = Debug|Win32
+		{AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4}.Debug.Build.0 = Debug|Win32
+		{AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4}.Release.ActiveCfg = Release|Win32
+		{AC2B8006-982E-4EC5-A6E2-1D7B5E4121F4}.Release.Build.0 = Release|Win32
+		{6CC8C0D3-5369-4863-818F-96896039AF3B}.Debug.ActiveCfg = Debug|Win32
+		{6CC8C0D3-5369-4863-818F-96896039AF3B}.Debug.Build.0 = Debug|Win32
+		{6CC8C0D3-5369-4863-818F-96896039AF3B}.Release.ActiveCfg = Release|Win32
+		{6CC8C0D3-5369-4863-818F-96896039AF3B}.Release.Build.0 = Release|Win32
+		{862AC120-2198-4554-BA6D-D2B7FBAEB3D6}.Debug.ActiveCfg = Debug|.NET
+		{862AC120-2198-4554-BA6D-D2B7FBAEB3D6}.Debug.Build.0 = Debug|.NET
+		{862AC120-2198-4554-BA6D-D2B7FBAEB3D6}.Release.ActiveCfg = Release|.NET
+		{862AC120-2198-4554-BA6D-D2B7FBAEB3D6}.Release.Build.0 = Release|.NET
+		{55E4443E-FF68-4148-9B7B-2948A45D6C31}.Debug.ActiveCfg = Debug|.NET
+		{55E4443E-FF68-4148-9B7B-2948A45D6C31}.Debug.Build.0 = Debug|.NET
+		{55E4443E-FF68-4148-9B7B-2948A45D6C31}.Release.ActiveCfg = Release|.NET
+		{55E4443E-FF68-4148-9B7B-2948A45D6C31}.Release.Build.0 = Release|.NET
+		{B563A51D-AAF5-478B-8BFF-BBBD7418BFED}.Debug.ActiveCfg = Debug|.NET
+		{B563A51D-AAF5-478B-8BFF-BBBD7418BFED}.Debug.Build.0 = Debug|.NET
+		{B563A51D-AAF5-478B-8BFF-BBBD7418BFED}.Release.ActiveCfg = Release|.NET
+		{B563A51D-AAF5-478B-8BFF-BBBD7418BFED}.Release.Build.0 = Release|.NET
+		{A95AAD1E-9C99-472C-AF92-623262AD120A}.Debug.ActiveCfg = Debug
+		{A95AAD1E-9C99-472C-AF92-623262AD120A}.Release.ActiveCfg = Release
+		{0DE8A3BA-7578-4EDC-A1B5-6B8E93F352AC}.Debug.ActiveCfg = Debug|Win32
+		{0DE8A3BA-7578-4EDC-A1B5-6B8E93F352AC}.Debug.Build.0 = Debug|Win32
+		{0DE8A3BA-7578-4EDC-A1B5-6B8E93F352AC}.Release.ActiveCfg = Release|Win32
+		{0DE8A3BA-7578-4EDC-A1B5-6B8E93F352AC}.Release.Build.0 = Release|Win32
+		{5C9FFA0E-FCC7-4EBE-834A-DF21BC34B2C7}.Debug.ActiveCfg = Debug
+		{5C9FFA0E-FCC7-4EBE-834A-DF21BC34B2C7}.Debug.Build.0 = Debug
+		{5C9FFA0E-FCC7-4EBE-834A-DF21BC34B2C7}.Release.ActiveCfg = Release
+		{5C9FFA0E-FCC7-4EBE-834A-DF21BC34B2C7}.Release.Build.0 = Release
+		{6BB70A4A-6C04-440D-ABA2-91A33CCD4F59}.Debug.ActiveCfg = Debug
+		{6BB70A4A-6C04-440D-ABA2-91A33CCD4F59}.Debug.Build.0 = Debug
+		{6BB70A4A-6C04-440D-ABA2-91A33CCD4F59}.Release.ActiveCfg = Release
+		{6BB70A4A-6C04-440D-ABA2-91A33CCD4F59}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
